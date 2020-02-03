@@ -1,56 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-	background-color: black;
-	font-family: sans-serif;
-}
+	<html>
 
-.matt-said-a-thing{
-	margin: auto;
-	margin-top: 25vh;
-	width: 50%;
-	font-size: 3em;
-	color: white;
-}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
 
-.matt-said-a-thing > footer {
-	font-size: 1em;
-	float: right;
-	color: gray;
-}
-</style>
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
-</head>
-<body>
-<blockquote class="matt-said-a-thing">
-<p>"<span id="mattism"></span>"</p>
-<footer>- <i>Matt Downs<i></footer>
-</blockquote>
-<script type="text/javascript">
-var said = [
-	'Interception blocked',
-	'they thought it was cute. I was 17.',
-	'It’s not the inverse, it’s the opposite.',
-	'I don’t like Five Guys fries. They taste too potato-y.',
-	'Land does float, actually.',
-	'Lumps n\' chunks',
-	'I’m not loud, at least not verbally.',
-	'Re-bettering',
-	'My mama always told me never to drink dark soda',
-	'This thin crust pizza doesn’t taste good. It’s like saltine crackers… without the saltine.',
-	'Ooo they have bubbly here. Is that champange?',
-	'Get me that bourbon kit',
-	'Wanna chomp?',
-	'Does the pasta come with fries?'
-];
-function pickASaying(){
-	var quoteOfThePageLoad = said[Math.floor(Math.random() * said.length)];
-	document.getElementById("mattism").innerHTML = quoteOfThePageLoad;
-}
-document.addEventListener("DOMContentLoaded",pickASaying);
-</script>
-</body>
-</html>
+		<link rel="stylesheet" href="site.css" />
+	</head>
+
+	<body>
+		<blockquote class="matt-said-a-thing">
+			<p>"<span id="mattisim"></span>"</p>
+			<footer>- <i>Matt Downs<i></footer>
+		</blockquote>
+
+		<script src="site.js"></script>
+	</body>
+
+	</html>

@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.matt-said-a-thing {
+    margin: auto;
+    margin-top: 25vh;
+    width: 50%;
+    font-size: 3rem;
+    color: white;
+}
+
+.matt-said-a-thing > footer {
+    font-size: 2rem;
+    float: right;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .matt-said-a-thing {
+        font-size: 1.75rem;
+        width: 75%;
+    }
+
+    .matt-said-a-thing > footer {
+        font-size: 1.25rem;
+    }
+}
