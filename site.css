@@ -1,29 +1,61 @@
 body {
-    background-color: black;
-    font-family: sans-serif;
+  background-color: black;
+  font-family: sans-serif;
 }
 
 .matt-said-a-thing {
-    margin: auto;
-    margin-top: 25vh;
-    width: 50%;
-    font-size: 3rem;
-    color: white;
+  margin: auto;
+  margin-top: 25vh;
+  width: 50%;
+  font-size: 3rem;
+  color: white;
 }
 
 .matt-said-a-thing > footer {
-    font-size: 2rem;
-    float: right;
-    color: gray;
+  font-size: 2rem;
+  float: right;
+  color: gray;
+}
+
+#mattisim {
+  margin: 1em auto;
+}
+
+#mattisim .quote {
+  animation-name: fade;
+  animation-duration: 6s;
+}
+
+#mattisim .quote::before {
+  content: "\201C";
+}
+
+#mattisim .quote::after {
+  content: "\201D";
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 600px) {
-    .matt-said-a-thing {
-        font-size: 1.75rem;
-        width: 75%;
-    }
+  .matt-said-a-thing {
+    font-size: 1.75rem;
+    width: 75%;
+  }
 
-    .matt-said-a-thing > footer {
-        font-size: 1.25rem;
-    }
+  .matt-said-a-thing > footer {
+    font-size: 1.25rem;
+  }
 }
