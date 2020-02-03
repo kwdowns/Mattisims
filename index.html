@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -26,7 +26,7 @@ body {
 </head>
 <body>
 <blockquote class="matt-said-a-thing">
-<p>"<span id="mattisim"></span>"</p>
+<p>"<span id="mattism"></span>"</p>
 <footer>- <i>Matt Downs<i></footer>
 </blockquote>
 <script type="text/javascript">
@@ -48,7 +48,7 @@ var said = [
 ];
 function pickASaying(){
 	var quoteOfThePageLoad = said[Math.floor(Math.random() * said.length)];
-	document.getElementById("mattisim").innerHTML = quoteOfThePageLoad;
+	document.getElementById("mattism").innerHTML = quoteOfThePageLoad;
 }
 document.addEventListener("DOMContentLoaded",pickASaying);
 </script>
