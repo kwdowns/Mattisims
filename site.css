@@ -80,6 +80,7 @@ body {
   z-index: -1;
   background-image: url(./matt.jpg);
   background-size: cover;
+  background-position: center center;
   filter: brightness(0.30);
   transition: transform 15s ease-out, opacity 1s ease;
   transform: scale(1.2) translate(5%, 0);
