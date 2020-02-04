@@ -1,6 +1,9 @@
 html, body {
   width: 100%;
   height: 100%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
 }
 * {
   box-sizing: border-box;
@@ -13,7 +16,7 @@ body {
 
 .matt-said-a-thing {
   margin: auto;
-  margin-top: 25vh;
+  padding-top: 25vh;
   width: 50%;
   font-size: 3rem;
   color: white;
