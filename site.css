@@ -1,3 +1,14 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
   font-family: sans-serif;
@@ -5,7 +16,7 @@ body {
 
 .matt-said-a-thing {
   margin: auto;
-  margin-top: 25vh;
+  padding-top: 25vh;
   width: 50%;
   font-size: 3rem;
   color: white;
@@ -58,4 +69,23 @@ body {
   .matt-said-a-thing > footer {
     font-size: 1.25rem;
   }
+}
+
+#mattground {
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(./matt.jpg);
+  background-size: cover;
+  filter: brightness(0.30);
+  transition: transform 15s ease-out, opacity 1s ease;
+  transform: scale(1.2) translate(5%, 0);
+}
+
+#mattground.fade {
+  opacity: 0;
+  transform: scale(1.2) translate(-5%, 0);
 }

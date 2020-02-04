@@ -8,7 +8,7 @@ var said = [
   "I’m not loud, at least not verbally.",
   "Re-bettering",
   "My mama always told me never to drink dark soda",
-  "This thin crust pizza doesn’t taste good. It’s like saltine crackers… without the saltine.",
+  "This thin pizza crust doesn’t taste good. It’s like saltine crackers… without the saltine.",
   "Ooo they have bubbly here. Is that champange?",
   "Get me that bourbon kit",
   "Wanna chomp?",
@@ -31,6 +31,9 @@ window.addEventListener(
     fadeComplete();
 
     stage.addEventListener("animationend", fadeComplete, false);
+    window.setTimeout(function() {
+      document.getElementById("mattground").classList.remove("fade");
+    }, 500);
   },
   false
 );
