@@ -12,7 +12,8 @@ var said = [
   "Ooo they have bubbly here. Is that champange?",
   "Get me that bourbon kit",
   "Wanna chomp?",
-  "Does the pasta come with fries?"
+  "Does the pasta come with fries?",
+  "50% of the time, people don't notice when I'm not there."
 ];
 
 var stage = document.getElementById("mattisim");
